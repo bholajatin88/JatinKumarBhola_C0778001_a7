@@ -64,7 +64,7 @@ public class BankOperations {
     //Method Overloading
     public void showBalance() {
         JOptionPane.showMessageDialog(null, "Hello " + this.userName + "!!"
-                + "\n" + "Your balance is " + this.balance);
+                + "\n" + "Your balance is " + String.format("%.3f", this.balance));
     }
 
     /**
@@ -74,7 +74,7 @@ public class BankOperations {
     //Method Overloading
     public void showBalance(boolean updated) {
         JOptionPane.showMessageDialog(null, "Hello " + this.userName + "!!"
-                + "\n" + "Your updated balance is $" + this.balance);
+                + "\n" + "Your updated balance is $" + String.format("%.3f", this.balance));
     }
 
     /**
